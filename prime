@@ -1,0 +1,23 @@
+n = int(input())
+count= 0
+if n<2:
+  print("not a prime")
+else:
+  for i in range(2,n//2+1):
+    if n%i ==0:
+      count +=1
+      break
+  if count == 0:
+    print("prime")
+  else:
+    print("not prime")
+
+//  1. Take an integer as input from the user.
+//  2. Check whether the number is less than 2. If n < 2, it is not a prime number.
+//  3. If the number is greater than or equal to 2, check whether it is divisible by any number other than 1 and itself.
+//  i) A prime number is a number greater than 1 that is divisible only by 1 and itself.
+//  ii) We do not need to check all the numbers from 2 to n - 1. We can check only up to n // 2, because no integer greater than n // 2 and less than n can divide n exactly.
+//  4. Use the range range(2, n // 2 + 1) to check for divisors.
+//  - If any number in this range divides n exactly (n % i == 0), the number is not prime.
+//  - If no number in this range divides n exactly, the number is prime.
+//  Small example: For n = 9, we check 2, 3, 4. Since 9 % 3 == 0, 9 is not prime.
