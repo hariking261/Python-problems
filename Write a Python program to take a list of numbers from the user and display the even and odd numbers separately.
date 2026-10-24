@@ -1,0 +1,10 @@
+lst = eval(input())
+even_count = []
+odd_count = []
+for i in lst:
+  if i % 2 == 0:
+    even_count.append(i)
+  else:
+    odd_count.append(i)
+print(even_count)
+print(odd_count)
