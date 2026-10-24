@@ -21,3 +21,17 @@ else:
 //  - If any number in this range divides n exactly (n % i == 0), the number is not prime.
 //  - If no number in this range divides n exactly, the number is prime.
 //  Small example: For n = 9, we check 2, 3, 4. Since 9 % 3 == 0, 9 is not prime.
+
+
+2nd method
+n = int(input())
+if n < 2 :
+  print("Not a prime a number")
+else:
+  count = 0
+  for i in range(2,(n//2)+1):
+    if n % i == 0:
+      print("not a prime number")
+      break
+  else:
+    print("prime number")
